@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/primeFactor/{number}', 'PrimeFactorController@index');
+
+Route::get('/roman/{number}', 'RomanController@index');
