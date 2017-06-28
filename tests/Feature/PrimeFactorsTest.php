@@ -86,6 +86,13 @@ class PrimeFactorsTest extends TestCase
       $response->assertSee("[3,5]");
     }
 
+    public function testPrime_77()
+    {
+      $response = $this->get('/primeFactor/77');
+
+      $response->assertSee("[7,11]");
+    }
+
     public function testPrime_100()
     {
       $response = $this->get('/primeFactor/100');
