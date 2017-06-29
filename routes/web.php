@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/primeFactor/{number}', 'PrimeFactorController@index');
 
 Route::get('/roman/{number}', 'RomanController@index');
+
+Route::get( '/bowling/{frame1}/{frame2}/{frame3}/{frame4}/{frame5}/{frame6}/{frame7}/{frame8}/{frame9}/{frame10}/{frame11}/{frame12}',
+            'BowlingController@play');
